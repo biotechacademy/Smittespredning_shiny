@@ -24,8 +24,8 @@ sir_model_hpv <- function(time,state,parameters){
     beta = contacts_monthly * transmission_risk
     
     
-    if (alpha_monthly() > 0) {
-      alpha = 1/alpha_monthly()
+    if (alpha_monthly > 0) {
+      alpha = 1/alpha_monthly
     }
     else {
       alpha = 0
